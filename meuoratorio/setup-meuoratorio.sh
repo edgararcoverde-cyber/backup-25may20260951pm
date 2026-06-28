@@ -5,7 +5,7 @@ set -euo pipefail
 
 PROJ="$HOME/meuoratorio"
 BASE="https://raw.githubusercontent.com/edgararcoverde-cyber/backup-25may20260951pm/claude/new-app-setup-fnq8r1/meuoratorio/docs"
-FILES=(fontes-conteudo mvp-conteudo-instrucoes ingestao-oracoes-santos email-licenciamento-cnbb decisoes-design)
+FILES=(fontes-conteudo mvp-conteudo-instrucoes ingestao-oracoes-santos ingestao-biblia email-licenciamento-cnbb decisoes-design)
 
 echo "==> Projeto: $PROJ"
 mkdir -p "$PROJ/docs"
