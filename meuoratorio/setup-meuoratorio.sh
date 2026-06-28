@@ -4,19 +4,29 @@
 set -euo pipefail
 
 PROJ="$HOME/meuoratorio"
-BASE="https://raw.githubusercontent.com/edgararcoverde-cyber/backup-25may20260951pm/claude/new-app-setup-fnq8r1/meuoratorio/docs"
-FILES=(fundacao-projeto fontes-conteudo mvp-conteudo-instrucoes ingestao-oracoes-santos ingestao-biblia email-licenciamento-cnbb decisoes-design)
+ROOT="https://raw.githubusercontent.com/edgararcoverde-cyber/backup-25may20260951pm/claude/new-app-setup-fnq8r1/meuoratorio"
+DOCS=(fundacao-projeto fontes-conteudo mvp-conteudo-instrucoes ingestao-oracoes-santos ingestao-biblia email-licenciamento-cnbb decisoes-design)
+UI=(tokens.ts tailwind-preset.js)
 
 echo "==> Projeto: $PROJ"
-mkdir -p "$PROJ/docs"
+mkdir -p "$PROJ/docs" "$PROJ/packages/ui"
 cd "$PROJ"
 
 echo "==> Baixando docs (sem sobrescrever os que já existem)..."
-for f in "${FILES[@]}"; do
+for f in "${DOCS[@]}"; do
   if [ -f "docs/$f.md" ]; then
     echo "    (ja existe) docs/$f.md"
   else
-    curl -fsSL "$BASE/$f.md" -o "docs/$f.md" && echo "    baixado  docs/$f.md"
+    curl -fsSL "$ROOT/docs/$f.md" -o "docs/$f.md" && echo "    baixado  docs/$f.md"
+  fi
+done
+
+echo "==> Baixando design tokens (packages/ui)..."
+for f in "${UI[@]}"; do
+  if [ -f "packages/ui/$f" ]; then
+    echo "    (ja existe) packages/ui/$f"
+  else
+    curl -fsSL "$ROOT/packages/ui/$f" -o "packages/ui/$f" && echo "    baixado  packages/ui/$f"
   fi
 done
 
@@ -26,11 +36,11 @@ if [ ! -d .git ]; then
   git branch -M main 2>/dev/null || true
 fi
 
-git add docs
+git add docs packages
 if git diff --cached --quiet; then
   echo "    nada novo para commitar"
 else
-  git commit -q -m "Adiciona docs de conteudo e licenciamento (Meu Oratorio)"
+  git commit -q -m "Adiciona docs e design tokens (Meu Oratorio)"
   echo "    commit criado"
 fi
 
