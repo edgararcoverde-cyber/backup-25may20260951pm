@@ -1,0 +1,261 @@
+# Instincts generated from https://github.com/edgararcoverde-cyber/backup-25may20260951pm
+# Generated: 2026-06-28T05:38:28.229Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: backup-25may20260951pm-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Commit Length
+
+## Action
+
+Keep commit messages concise (~38 characters)
+
+## Evidence
+
+- Average commit message length: 38 chars
+- Based on 1 commits
+
+---
+id: backup-25may20260951pm-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: backup-25may20260951pm-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: backup-25may20260951pm-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: backup-25may20260951pm-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: backup-25may20260951pm-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct File Naming
+
+## Action
+
+Name the file using kebab-case
+
+## Evidence
+
+- Pattern: namingConventions.files = kebab-case
+
+---
+id: backup-25may20260951pm-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern: namingConventions.functions = camelCase
+
+---
+id: backup-25may20260951pm-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern: namingConventions.classes = PascalCase
+
+---
+id: backup-25may20260951pm-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern: namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: backup-25may20260951pm-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern: importStyle = relative
+
+---
+id: backup-25may20260951pm-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern: exportStyle = named
+
+---
+id: backup-25may20260951pm-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Git Commit Format
+
+## Action
+
+Write a short, freeform message without a prefix, averaging around 38 characters
+
+## Evidence
+
+- Pattern: commits.type = freeform
+- Pattern: commits.prefixes = []
+- Pattern: commits.averageLength = 38
+- Example: 'Add Meu Oratório content-sourcing docs'
+
+---
+id: backup-25may20260951pm-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: edgararcoverde-cyber/backup-25may20260951pm
+---
+
+# Backup 25may20260951pm Instinct Test Location
+
+## Action
+
+Place test files in a separate folder from source code
+
+## Evidence
+
+- Pattern: testLocation = separate
+
