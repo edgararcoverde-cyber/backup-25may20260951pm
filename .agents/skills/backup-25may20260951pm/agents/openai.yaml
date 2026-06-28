@@ -1,0 +1,6 @@
+interface:
+  display_name: "Backup 25may20260951pm"
+  short_description: "Repo-specific patterns and workflows for backup-25may20260951pm"
+  default_prompt: "Use the backup-25may20260951pm repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
