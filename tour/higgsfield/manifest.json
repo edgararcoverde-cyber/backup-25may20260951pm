@@ -194,5 +194,14 @@
   "15": "https://d8j0ntlcm91z4.cloudfront.net/user_3FP4DvxSNnnhoXJz6524FUNUJGF/hf_20260909_032113_a6410dcc-4c9e-4798-a969-c363363c059f.mp4",
   "25": "https://d8j0ntlcm91z4.cloudfront.net/user_3FP4DvxSNnnhoXJz6524FUNUJGF/hf_20260909_032130_75442221-7575-486a-bdd8-08acf2c44f12.mp4",
   "31": "https://d8j0ntlcm91z4.cloudfront.net/user_3FP4DvxSNnnhoXJz6524FUNUJGF/hf_20260909_032130_cf395640-481c-4c97-8b3d-14029e08119e.mp4"
+ },
+ "final": {
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3FP4DvxSNnnhoXJz6524FUNUJGF/2afb7adb-2dcf-4b32-b4d2-a8ba854cdc63.mp4",
+  "media_id": "2afb7adb-2dcf-4b32-b4d2-a8ba854cdc63",
+  "duration_s": 316.6,
+  "size_bytes": 237803002,
+  "res": "1920x1080",
+  "fps": 24,
+  "pipeline": "Higgsfield sandbox: 39 Kling-pro clips + E&T intro/outro cards (4.5s, fades) -> concat (libx264 crf18) -> lounge track looped, fade in 2.5s / out 4.5s, vol 0.9 -> AAC 192k"
  }
 }

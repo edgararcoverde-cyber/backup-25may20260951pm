@@ -1,4 +1,10 @@
-# Tour E&T — playlist dos 39 clipes (ordem final)
+# Tour E&T — FILME FINAL
+
+**[▶ Tour_Final_ET_1080p.mp4](https://d2ol7oe51mr4n9.cloudfront.net/user_3FP4DvxSNnnhoXJz6524FUNUJGF/2afb7adb-2dcf-4b32-b4d2-a8ba854cdc63.mp4)** — 5:17 · 1920×1080 · 24fps · 238 MB · cartelas E&T + 39 clipes + trilha lounge
+
+---
+
+## Filme final montado a partir desta playlist dos 39 clipes (ordem final)
 
 | # | Trajeto | Dur. | Link |
 |---|---|---|---|
